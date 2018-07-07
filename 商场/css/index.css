@@ -1,0 +1,163 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+.all {
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    width:100%;
+    height:40px;
+    background: red;
+    position: fixed;
+    line-height: 40px;
+    z-index: 999;
+}
+.top p{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+.top span::before{
+    font-family: "iconfont";
+	content:"\e60b";
+    position: absolute;
+    display: block;
+    color:white;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.banner{
+    width:100%;
+    display: block;
+    position: relative;   
+}
+.banner> .bannerImg{
+    width:100%;
+    display: block;
+    position:relative;
+}
+.banner>.bannerImg >img{
+    width:100%;
+    display: block;
+}
+.banner>.picture{
+    width:25%;
+    display: block;
+    position: absolute;
+    left:10%;
+    top:44%;
+}
+.banner>.picture a{
+    width:100%;
+    display: block;
+}
+.banner>.picture> a img{
+    width:100%;
+    display: block;
+}
+.banner >p {
+    position: absolute;
+    display: block;
+    left:40%;
+    top:46%;
+    color:#FFFFFF;
+    font-size:16px;
+}
+.banner> .phone{
+    position: absolute;
+    width:100%;
+    display: block;
+    left:40%;
+    top:70%;
+}
+.banner>.phone span{
+    position: relative;
+    display:block;
+    background: red !important;
+    border-radius: 5px;
+    margin-left: 10px;
+    float: left;
+    
+}
+
+.banner i::before{
+    font-family: "iconfont";
+    content:"\e617";
+    position: absolute;
+    display: block;
+    color:white;
+    right:6%;
+    top:50%;
+    transform: translateY(50%);
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+}
+.logo{
+    width:100%;
+    position: relative;
+    display: block;
+    background: #72A7A9 !important;
+    text-align: center;
+}
+.logo div{
+    width:33.33%;
+    float: left; 
+}
+.logo >div>p{
+    padding:5px 0;
+    color:white;
+}
+.logo div:nth-child(2){
+    border-left:1px solid #FFFFFF;
+    border-right:1px solid #fff;
+}
+.content{
+    width:100%;
+    text-align: center;
+    overflow: auto;
+}
+.content li{
+    padding:5px;
+    width:25%;
+    float: left;
+}
+.content li  img{
+    width:100%;
+    display: block;
+}
+.picture{
+    width:100%;
+}
+.picture img{
+    width:100%;
+    display: block;
+}
+.footer{
+    position: fixed;
+    text-align: center;
+    width:100%;
+    bottom:0;
+    background: purple;
+}
+.footer li{
+    width:25%;
+    float: left;
+}
+.footer li span{
+    font-size: 24px;
+    /* color:red; */
+}
+
+
+
+
+ 

@@ -1,0 +1,32 @@
+html,body,div,form,input,a,ol,ul,li,p,span,img{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* 清除移动端默认背景色 */
+    -webkit-tap-highlight-color: transparent;
+    list-style-type: none;
+    text-decoration: none;
+}
+a,a:hover{
+    color:#ccc;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float:right;
+}
+input{
+    outline: none;
+    border:none;
+    border:1px solid #ccc;
+}
+.clearfix:before,
+.clearfix:after{
+    content:"";
+    display: block;
+    height:0;
+    line-height:0;
+    clear: both;
+    visibility: hidden;
+}
