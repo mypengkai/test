@@ -1,0 +1,35 @@
+html,body,div,p,ul,li,a,form,input,ol,img,h1,h2,h3,h4,h5,h6{
+   padding: 0;
+   margin:0;
+   box-sizing: border-box;
+   -webkit-tap-highlight-color:transparent;
+   text-decoration: none;
+   list-style-type: none;
+}
+a,a:hover{
+    color:#ccc;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float:right;
+}
+input{
+    /* 清除边框默认阴影 */
+    outline: none;
+    /* 去除边框 */
+    border:none;
+    /* 添加边框 */
+    border:1px solid #ccc;
+}
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0px;
+    clear: both;
+    visibility: hidden;
+}

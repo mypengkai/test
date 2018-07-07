@@ -1,0 +1,159 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.all{
+    width:100%;
+    height:100%;
+    max-width: 640px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    .header{
+        width:100%;
+        position: relative;
+        .headerImg{
+            width:100%;
+            height:100%;
+            img{
+                display: block;
+                width:100%;
+                z-index: 99;
+            }
+            .headerText{
+                position: absolute;
+                left:0;
+                bottom:0;
+                width:100%;
+                height:12%;
+                line-height: 100%;
+    
+                span{
+                    color:white;
+                    display: inline-block;
+                    &:nth-child(1){
+                        position: absolute;
+                        left:28%;
+        
+                        font-size: 22px;  
+                    }
+                    &:nth-child(2){
+                        position: absolute;
+                        left:36%;
+                    }
+                    &:nth-child(3){
+                        position: absolute;
+                        left:60%;
+                        font-size: 22px;
+                    }
+                    &:nth-child(4){
+                        position: absolute;
+                        left:68%;
+                    }
+                }
+
+            }
+        }
+        .headerPlay{
+            position: absolute;
+            right:0;
+            top:0;
+            span{
+                position: absolute;
+                width:30px;
+                height:32px;
+                right:10px;
+                top:10px;
+                img{
+                    width:100%;
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+    }
+    .footer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+       
+        .footerTop{
+            width:100%;
+            height:40px;
+            background: #ccc;
+            line-height: 40px;
+            text-align: center;
+            font-weight: normal;
+            li{
+                width:50%;
+                float: left;
+                position: relative;
+                &:nth-child(1){
+                    border-right:1px solid white;
+                }
+                &:nth-child(2){
+                    border-left:1px solid white;
+                }
+                .move1,
+                .move2{
+                     width:100%;
+                     position: absolute;
+                     height:3px;
+                     background: red;
+                     bottom:0;
+                     left:0;
+                }
+            }
+            
+        }
+        .content{
+            width:100%;
+            
+            padding: 10px;
+            flex: 1;
+            overflow:auto;
+            .number2{
+                display: none;
+            }
+            ul{
+                width:100%;           
+                li{
+                    width:33.33%;
+                    padding:10px;
+                    border:1px solid red;
+                    float: left;
+                    &:nth-child(3n-4){
+                        border-left:1px solid white;
+                        border-right:1px solid white;
+                    }
+                    img{
+                        width:100%;
+                        display: block;
+                    }
+                    h6{
+                        font-size:14px;
+                        font-weight: normal;
+                        text-align: center;
+                        padding-bottom:5px;
+                    }
+                    span{
+                        width:100%;
+                        height:100%;
+                        display: block;
+                        background: red;
+                        text-align: center;
+                        border-radius: 8px;  
+                    }
+                    p{
+                       font-weight: normal;
+                       font-size: 12px;
+                       padding-bottom:5px ;
+                    }
+                }
+            }
+            
+        }
+    }
+}
